@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header with Right-Side Hamburger Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="art.css">
+</head>
+<body>
+    <header>
+        <span>Piet Mondrian</span>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="navMenu">
+            <a href="#">Gallery</a>
+            <a href="#abt">About</a>
+            <a href="#contact-me">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="item item-1">
+                <div class="grid1">
+                    <div class="grid-container1">
+                        <div class="grid1-item grid1-item1"></div>
+                        <div class="grid1-item grid1-item2"></div>
+                        <div class="grid1-item grid1-item3"></div>
+                        <div class="grid1-item grid1-item4"></div>
+                        <div class="grid1-item grid1-item5"></div>
+                        <div class="grid1-item grid1-item6"></div>
+                        <div class="grid1-item grid1-item7"></div>
+                    </div>
+                </div>
+                <h2>Composition with Red, Blue, and Yellow - 1930</h2>
+            </div>
+
+            <div class="item item-2">
+                <div class="grid2">
+                    <div class="grid-container2">
+                        <div class="grid2-item grid2-item1"></div>
+                        <div class="grid2-item grid2-item2"></div>
+                        <div class="grid2-item grid2-item3"></div>
+                        <div class="grid2-item grid2-item4"></div>
+                        <div class="grid2-item grid2-item5"></div>
+                        <div class="grid2-item grid2-item6"></div>
+                        <div class="grid2-item grid2-item7"></div>
+                    </div>
+                </div>
+                <h2>Square Abstract Wall Art Blue, Red, Yellow, Black Line.</h2>
+            </div>
+
+            <div class="item item-3">
+                <div class="grid3">
+                    <div class="grid-container3">
+                        <div class="grid3-item grid3-item1"></div>
+                        <div class="grid3-item grid3-item2"></div>
+                        <div class="grid3-item grid3-item3"></div>
+                        <div class="grid3-item grid3-item4"></div>
+                        <div class="grid3-item grid3-item5"></div>
+                        <div class="grid3-item grid3-item6"></div>
+                        <div class="grid3-item grid3-item7"></div>
+                        <div class="grid3-item grid3-item8"></div>
+                    </div>
+                </div>
+                <h2>Abstract Composition - 2024</h2>
+            </div>
+
+            <div class="item item-4">
+                <div class="grid4">
+                    <div class="grid-container4">
+                        <div class="grid4-item grid4-item1"></div>
+                        <div class="grid4-item grid4-item2"></div>
+                        <div class="grid4-item grid4-item3"></div>
+                        <div class="grid4-item grid4-item4"></div>
+                        <div class="grid4-item grid4-item5"></div>
+                        <div class="grid4-item grid4-item6"></div>
+                        <div class="grid4-item grid4-item7"></div>
+                    </div>
+                </div>
+                <h2>Composition in Blue and Red - 2024</h2>
+            </div>
+             <div class="item item-5">
+                <div class="grid5">
+                    <div class="grid-container5">
+                        <div class="grid5-item grid5-item1"></div>
+                        <div class="grid5-item grid5-item2"></div>
+                        <div class="grid5-item grid5-item3"></div>
+                        <div class="grid5-item grid5-item4"></div>
+                        <div class="grid5-item grid5-item5"></div>
+                        <div class="grid5-item grid5-item6"></div>
+                        <div class="grid5-item grid5-item7"></div>
+                        <div class="grid5-item grid5-item8"></div>
+                        <div class="grid5-item grid5-item9"></div>
+                    </div>
+                </div>
+                <h2>Dynamic Grid - 2024</h2>
+            </div>
+            <div class="item item-6">
+                <div class="grid6">
+                    <div class="grid-container6">
+                        <div class="grid6-item grid6-item1"></div>
+                        <div class="grid6-item grid6-item2"></div>
+                        <div class="grid6-item grid6-item3"></div>
+                        <div class="grid6-item grid6-item4"></div>
+                        <div class="grid6-item grid6-item5"></div>
+                        <div class="grid6-item grid6-item6"></div>
+                        <div class="grid6-item grid6-item7"></div>
+                        <div class="grid6-item grid6-item8"></div>
+                        <div class="grid6-item grid6-item9"></div>
+                    </div>
+                </div>
+                <h2>Geometric Balance - 2024</h2>
+            </div>
+        </div>
+
+        <div id="abt">
+            <h2>About Piet Mondrian</h2>
+            <p>Piet Mondrian was a Dutch painter and theoretician who is regarded as one of the greatest artists of the 20th century. He is known for being one of the pioneers of 20th-century abstract art, and his most famous works are abstract paintings made up of straight lines, geometric shapes, and primary colors.</p>
+            <p>Mondrian's work had an enormous influence on modern art, design, and architecture. His artistic evolution is marked by a transition from figuration to increasing levels of abstraction, reflecting his spiritual and philosophical quest for purity and universal harmony. Mondrian's style, known as Neoplasticism or De Stijl, has inspired countless artists and designers around the world.</p>
+            <p>Born in 1872 in Amersfoort, Netherlands, Mondrian began his artistic career as a teacher and a landscape painter. Over time, he became more interested in Theosophy and spiritualism, which influenced his move towards abstraction. He moved to Paris in 1911, where he was influenced by Cubism, and later to New York City in 1940, where he continued to develop his distinctive style until his death in 1944.</p>
+        </div>
+
+        <div id="contact-me">
+            
+        </div>
+        
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var navMenu = document.getElementById('navMenu');
+            var hamburger = document.getElementById('hamburger');
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

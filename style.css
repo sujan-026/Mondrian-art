@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    height: 20px;
+}
+
+header span {
+    font-weight: semibold;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        padding-top: 60px;
+        transition: transform 0.3s ease;
+        z-index: 1;
+    }
+
+    nav a {
+        margin: 10px 0;
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav.active {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    .hamburger.active {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+    }
+}
+
+#abt {
+    margin: 50px 25px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#abt h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#abt p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
